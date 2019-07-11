@@ -2,8 +2,14 @@
 #include<stdlib.h>
 
 int main() {
+  char name[20];
   int D1,D2;
   int sum = 0;
+
+  printf("What is your name?\n");
+  scanf("%s",name);
+  printf("Hello, %s!\n",name);
+  
 
   D1 = rand() % 6 + 1;
   D2 = rand() % 6 + 1;
@@ -15,9 +21,9 @@ int main() {
   printf("Total value: %d\n",sum);
 
   if(sum >= 7) {
-    printf("You won\n");
+    printf("%s won\n",name);
   }else{
-    printf("You lost\n");
+    printf("%s lost\n",name);
   }
 
   return 0;
